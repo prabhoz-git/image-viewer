@@ -1,0 +1,12 @@
+/* CSS for Header component*/
+.app-header {
+    background-color: #263238;
+    height: 54px;
+
+}
+
+.app-logo {
+    color: #fff;
+    font-size: 18px;
+
+}
