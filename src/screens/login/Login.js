@@ -33,14 +33,13 @@ class Login extends Component {
 
     loginClickHandler = () => {
 
-        let mockUsernameInstagram = "PGDSD_107";
-        let mockPasswordInstagram = "PGDSD@107";
+        let mockUsernameInstagram = "prabh";
+        let mockPasswordInstagram = "prabh@upgradmay.com";
         let accessToken = "13521022383.d5e23ae.c9785a17269b494eb996c2cbc490a6f3";
 
         if (this.state.username === mockUsernameInstagram && this.state.password === mockPasswordInstagram) {
             window.sessionStorage.setItem("access-token", accessToken);
-            /*this is the history object where the push method available in the history object is used
-             to redirecting the user to the Home page when a user logins successfully.*/
+            /*redirect home page once static values are confirmed*/
             this.props.history.push('/home/');
 
         }
